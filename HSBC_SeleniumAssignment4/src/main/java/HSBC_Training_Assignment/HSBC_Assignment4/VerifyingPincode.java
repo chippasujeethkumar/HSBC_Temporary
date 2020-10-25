@@ -37,17 +37,18 @@ public class VerifyingPincode {
 	    
 	    HashSet<String> names=new HashSet<String>();
 	    
+	    System.out.println("-----------Dublicate pincodes---------------------");
 	    for(String pincode: pincodes)
 	    {
-	    	if(names.add(pincode)==true)
+	    	if(!names.add(pincode)==false)
 	    	{
-	    		count1=count1+1;
+	    		count1++;
+	    		System.out.println("--------------------------------------------");
 	    		System.out.println(pincode);
+	    		System.out.println("--------------------------------------------");
 	    	}
 	    }
-	    //299,186,112
-	    System.out.println("Above are Not same pincodes and count of pincodes is :"+count1);
-	    
-	
+	    //299,113
+	    System.out.println("Above are dublicate pincodes and count of those pincodes are:"+count1);	
 	}
-	}
+}

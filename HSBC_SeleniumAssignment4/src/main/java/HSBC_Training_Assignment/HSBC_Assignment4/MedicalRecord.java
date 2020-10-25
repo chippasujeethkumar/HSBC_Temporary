@@ -19,10 +19,11 @@ public class MedicalRecord {
 	    driver.get("http://openclinic.sourceforge.net/openclinic/home/index.php");
 	    driver.manage().window().maximize();
 	    
-	    WebElement medicalRecord=driver.findElement(By.xpath("/html/body/div/div[1]/div/ul/li[2]/a"));
+	    WebElement medicalRecord=driver.findElement(By.xpath("/html/body/div/div[2]/div/h1"));
 	    WebElement search=driver.findElement(By.xpath("//*[@id=\"content\"]/h2[1]/a"));
 	    WebElement dropdown=driver.findElement(By.id("search_type"));
 	    
+	   // /html/body/div/div[2]/div/h1
 	    medicalRecord.click();
 	    search.click();
 	    dropdown.click();
