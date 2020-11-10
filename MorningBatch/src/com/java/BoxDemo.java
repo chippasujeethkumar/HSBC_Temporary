@@ -30,10 +30,11 @@ public class BoxDemo {
 		// TODO Auto-generated method stub
 
 		Box5 mybox= new Box5(10,20,30);
+		
 		System.out.println(mybox.vol()); 
 		Box5 mybox2= new Box5(100,200,300);
 		System.out.println(mybox2.vol()); 
-
+		
 
 		//string functions
 		
